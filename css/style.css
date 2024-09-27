@@ -1,0 +1,47 @@
+#loginbody , #signupbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(26, 17, 6, 0.651), rgba(26, 17, 6, 0.651)),
+    url(../images/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* backdrop-filter: blur(2px); */
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(26, 17, 6, 0.651), rgba(26, 17, 6, 0.651)),
+    url(../images/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* backdrop-filter: blur(10px); */
+}
+
+.form-box , .group{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+
+}
+
+input,
+textarea {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(182, 182, 182) !important;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 0 transparent !important;
+}
