@@ -109,7 +109,6 @@ if (welcomeMsg) {
 
 function logout() {
   localStorage.removeItem("sessionUserName");
-  window.location = "index.html";
 }
 
 // * event listeners
