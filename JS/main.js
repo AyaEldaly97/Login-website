@@ -90,7 +90,7 @@ function login() {
       signupArray[i].password.toLowerCase() == password.toLowerCase()
     ) {
       localStorage.setItem("sessionUserName", signupArray[i].name);
-      window.location = "./home.html";
+      window.location = "home.html";
       return;
     }
     loginError.innerHTML = `<span class="text-danger m-3">Incorrect Email or Password</span>`;
@@ -103,13 +103,13 @@ if (welcomeMsg) {
   if (username) {
     welcomeMsg.innerHTML = `Welcome, ${username}`;
   } else {
-    window.location = "./index.html";
+    window.location = "index.html";
   }
 }
 
 function logout() {
   localStorage.removeItem("sessionUserName");
-  window.location = "./index.html";
+  window.location = "index.html";
 }
 
 // * event listeners
